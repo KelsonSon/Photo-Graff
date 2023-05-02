@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <h1>PhotoGraffs <i class="fa-regular fa-camera-polaroid"></i></h1>
+            </nav>
+        </header>
+        <article id="portfolio">
+            <section >
+                <div id="1" onclick="addZoom(1)" class="img-card">
+                    <img src="img/foto1.jpg" alt="">
+                </div>
+                <div id="2" onclick="addZoom(2)" class="img-card">
+                    <img src="img/foto2.jpg" alt="">
+                </div>
+                <div id="3" onclick="addZoom(3)" class="img-card">
+                    <img src="img/foto3.jpg" alt="">
+                </div>
+                <div id="4" onclick="addZoom(4)" class="img-card">
+                    <img src="img/foto4.jpg" alt="">
+                    
+                </div>
+                <div id="5" onclick="addZoom(5)" class="img-card">
+                    <img src="img/foto1.jpg" alt="">
+                </div>
+                <span onclick="closeZoom()" class="img-close"><i class="fa-solid fa-x"></i></span>
+            </section>
+        </article>
+        <aside id="contato">
+            <div class="perfil-card">
+                <img src="img/fotografo.jpg" alt="">
+                <h1>Graffs Fotografo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tempor ipsum, sed bibendum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Mauris pharetra tincidunt tempus. Donec at mi consequat, porta augue ac, dictum nisi. Ut lobortis lorem vitae augue porttitor porttitor. Cras ac feugiat risus, eget imperdiet nibh. Etiam at ante mattis nulla molestie ultrices ut in lectus. Curabitur in eros a metus dictum venenatis sed ac odio. Suspendisse volutpat eget ligula a vestibulum. Sed nec odio molestie, semper felis nec, cursus neque.</p>
+            </div>
+            <div class="btn-container">
+                
+                <a href="https://api.whatsapp.com/send/?phone=5581984378161&text=Gostaria+de+solicitar+um+orçamento&type=phone_number&app_absent=0"><p>Solicitar orçamento</p><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </aside>
+        <footer>
+            <div class="social">
+                <h2>Redes Sociais</h2>
+                <ul class="social-list">
+                    <li><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a></li>
+
+                </ul>
+                <p>Copyright &copy; 2023 By <a href="https://kelsonson.github.io/Portfolio/">KelsonSon</a></p>
+            </div>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
